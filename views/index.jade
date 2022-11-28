@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  body
+    .header-row.row
+      h1
+        | Welcome to BigCheese Inc. 
+        .img-cropper
+          img(src='img/06-03_Cheese_Article.jpg' alt='')
+    .row
+      .welcome-card.col-lg-6
+        h2.welcome-title Thank you for choosing BigCheese Inc.
+        h4 Made for all things cheesy
+        |             Supplier or Customer? 
+        .btn-group(role='group' aria-label='Basic radio toggle button group')
+          input#btnradio1.btn-check(type='radio' name='btnradio' autocomplete='off' checked='')
+          label.btn-supplier(for='btnradio1')
+            a(href='supplierLogin.html') Supplier
+          input#btnradio2.btn-check(type='radio' name='btnradio' autocomplete='off')
+          label.btn-buyer(for='btnradio2')
+            a(href='customerLogin.html') Customer
+      footer#supplier-footer
+        .bottom-footer
+          p.account
+            | Click here to
+            a.bottom-tag(href='createAccount.html')  Create Account
+          p.account
+            | Or go back to
+            a.bottom-tag(href='customerLogin.jade')  Client Login
+          .social-icon
+            i.social-icon.fa-brands.fa-facebook
+            i.social-icon.fa-brands.fa-twitter
+            i.social-icon.fa-brands.fa-instagram
+            i.social-icon.fa-solid.fa-envelope
+            p.copyright © Copyright Company
+      script(src='https://code.jquery.com/jquery-3.6.1.js' integrity='sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=' crossorigin='anonymous')
+      script(src='/javascripts/script.js')
+// BigCheese Inc. is a privately owned, independent, privately funded, full-service, foodservice and distribution company specializing in distributing fresh, quality, and value-added foods and ingredients. BigCheese is a leading distributor of new, value-added, specialty foods and ingredients to food service and retail customers in the United States and Canada. Products on this platform are distributed through a network of more than 1,500 independent and corporate food service distributors and through its BigCheese Direct brand. This platform was made to connect

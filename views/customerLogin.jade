@@ -1,0 +1,32 @@
+extends layout
+
+block content
+body
+    .login-row.row
+      .login-card.card.col-lg-6
+        h2.form-title Customer Login
+        form.form-group
+          .input-login
+            label.label-name Username
+            input(type='text' placeholder='Username')
+          .input-login
+            label.label-name Password
+            input(type='password' placeholder='Password')
+          button.submit-button.btn.btn-lg(type='button')
+            a(href='index.jade') Sign in
+    footer#footer
+      .bottom-footer
+        p.account
+          | Click here to
+          a.bottom-tag(href='createAccount.jade')  Create Account
+        p
+          | Not a client, 
+          a.bottom-tag(href='supplierLogin.jade') press here!
+        .social-icon
+          i.social-icon.fa-brands.fa-facebook
+          i.social-icon.fa-brands.fa-twitter
+          i.social-icon.fa-brands.fa-instagram
+          i.social-icon.fa-solid.fa-envelope
+          p.copyright © Copyright Company
+    script(src='https://code.jquery.com/jquery-3.6.1.js' integrity='sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=' crossorigin='anonymous')
+    script(src='script.js')
